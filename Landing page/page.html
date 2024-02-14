@@ -1,0 +1,369 @@
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333333;
+            margin-top: 20px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #666666;
+            margin-top: 10px;
+        }
+
+        .button {
+            width: 150px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff9900;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+
+        .header {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333333;
+            color: white;
+            font-size: 18px;
+        }
+
+        .header-left {
+            margin-left: 20px;
+        }
+
+        .header-right {
+            margin-right: 20px;
+        }
+
+        .header-link {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ff9900;
+        }
+
+        .nav-link {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .about {
+            width: 80%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .about-text {
+            width: 50%;
+            font-size: 20px;
+            color: #333333;
+        }
+
+        .about-image {
+            width: 40%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .products {
+            width: 80%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .product {
+            width: 25%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px #cccccc;
+        }
+
+        .product-image {
+            width: 80%;
+            height: 150px;
+            object-fit: contain;
+            margin-top: 10px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #ff9900;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-button {
+            width: 80%;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff9900;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 900px) {
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .title {
+                font-size: 30px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .button {
+                width: 120px;
+                height: 40px;
+                font-size: 16px;
+            }
+
+            .about {
+                flex-direction: column;
+                height: 500px;
+            }
+
+            .about-text {
+                width: 80%;
+                text-align: center;
+            }
+
+            .about-image {
+                width: 60%;
+                height: 200px;
+            }
+
+            .products {
+                height: 600px;
+            }
+
+            .product {
+                width: 40%;
+                height: 200px;
+            }
+
+            .product-image {
+                height: 100px;
+            }
+
+            .product-name {
+                font-size: 16px;
+            }
+
+            .product-price {
+                font-size: 14px;
+            }
+
+            .product-button {
+                width: 70%;
+                height: 30px;
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                height: 120px;
+            }
+
+            .header-left {
+                margin-left: 0;
+            }
+
+            .header-right {
+                margin-right: 0;
+            }
+
+            .nav {
+                flex-direction: column;
+                height: 120px;
+            }
+
+            .nav-link {
+                margin: 5px;
+            }
+
+            .products {
+                height: 800px;
+            }
+
+            .product {
+                width: 80%;
+                height: 150px;
+            }
+
+            .product-image {
+                height: 80px;
+            }
+
+            .product-name {
+                font-size: 14px;
+            }
+
+            .product-price {
+                font-size: 12px;
+            }
+
+            .product-button {
+                width: 60%;
+                height: 25px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <p>Contact us: +251 111111111 | info@Ethiolearn.com</p>
+        </div>
+        <div class="header-right">
+            <a href="https://www.facebook.com/naomi.tesfe" class="header-link">Facebook</a>
+            <a href="https://www.twitter.com/NuhaminTes40490" class="header-link">Twitter</a>
+            <a href="https://www.instagram.com/nuhamin7706" class="header-link">Instagram</a>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="buy.html" class="nav-link">Buy Now</a>
+    </div>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1 class="title">Welcome to Ethiolearn</h1>
+        <p class="subtitle">Knowledge is key!</p>
+        <button class="button">Get Started</button>
+    </div>
+   <div class="about">
+    <h1 align="center">About EthioLearn</h1>
+    <div class="about-text">
+        <p align="center">EthioLearn is a leading online learning platform that offers high-quality and affordable tech courses for learners in Ethiopia and beyond. Whether you want to learn web development, data science, machine learning, digital marketing, or any other tech skill, EthioLearn has the right course for you. You can learn at your own pace, from anywhere, and get certified by reputable instructors and institutions. EthioLearn is more than just a website, it is a community of passionate learners and educators who share the same vision of empowering Ethiopia with technology. Join EthioLearn today and start your tech journey! </p>
+    </div>
+    <div class="about-image">
+        <img src="ethiolearn.png" alt="Ethiolearn" width="300" height="300"> 
+    </div>
+</div>
+<div class="products" border="1"> 
+<h1 align="center">Course Titles</h1> 
+    <div class="products">
+    <div class="product">
+        <div class="product-image">
+            <img src="wd.jpeg" alt="Web Development" width="90%" height="80%">
+        </div>
+        <div class="product-name">
+            Web Development
+        </div>
+        <div class="product-price">
+            $99/month
+        </div>
+        <div class="product-button">
+            Buy Now
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-image">
+            <img src="ds.jpeg" alt="Data Science" width="90%" height="80%">
+        </div>
+        <div class="product-name">
+            Data Science
+        </div>
+        <div class="product-price">
+            $149/month
+        </div>
+        <div class="product-button">
+            Buy Now
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-image">
+            <img src="ml.jpeg" alt="Machine Learning" width="90%" height="80%">
+        </div>
+        <div class="product-name">
+            Machine Learning
+        </div>
+        <div class="product-price">
+            $199/month
+        </div>
+        <div class="product-button">
+            Buy Now
+        </div>
+    </div>
+</div>
+     <footer style="background-color: black;"> 
+    <p align="center"><font color="white">© 2024 EthioLearn. All rights reserved.</font></p>     
+    <p align="center"><font color="white">Contact us: <a href="mailto:info@ethiolearn.com">info@ethiolearn.com</a></font></p> 
+</footer>
