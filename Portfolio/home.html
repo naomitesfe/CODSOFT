@@ -155,6 +155,17 @@
         .footer a:hover {
             color: #ccc;
         }
+        .contact {
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-details {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .contact-form {
+            flex: 2;
+        }
     </style>
 </head>
 <body>
@@ -173,7 +184,7 @@
         <div class="section" id="about">
             <h2 class="section-title">About Me</h2>
             <div class="about">
-                <img src="assets/images/Nuha.jpg" alt="Image" class="about-image">
+                <img src="Nuha.jpg" alt="Image" class="about-image">
                 <div class="about-text">
                     <p>I am a highly skilled and self-driven Computer engineer and consultant with a vast knowledge of computer systems, networking, programming, and Enterprise Resource Planning. I have a keen eye for details, a strong problem-solving ability, and a great combination of leadership and technology skills. I am looking for a role where I can use these skills to create innovative solutions and contribute to the growth of your organization.</p>
                     <p>I am a computer engineer with AWS and Azure certifications. I have over 5 years of experience in developing cloud-based solutions for various domains. I am passionate about learning new technologies and solving complex problems.</p>
@@ -249,7 +260,15 @@
         <div class="section" id="contact">
             <h2 class="section-title">Contact Me</h2>
             <div class="contact">
+                <div class="contact-details">
+                    <h2>Contact Details</h2>
+                    <p>Email: tesfayenuhamin@gmail.com</p>
+                    <p>Phone: +1234567890</p>
+                    <p>Website: www.nuhiengineering.com</p>
+                </div>
+                
                 <form class="contact-form" action="mailto:tesfayenuhamin@gmail.com" method="post"> 
+                    <h2 class="section-title">Send me a Feedback!</h2>
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <textarea name="message" placeholder="Message" rows="5" required></textarea>
@@ -262,4 +281,3 @@
             <p>Follow me on <a href="https://www.linkedin.com/in/nuhamin-tesfaye-98608119b/" style="color: blue;">LinkedIn</a> and <a href="https://github.com/naomitesfe" style="color: blue;"> GitHub</a>.</p>
         </div>
     </div>
-
