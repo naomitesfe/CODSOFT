@@ -9,7 +9,7 @@
 
         .container {
             width: 100%;
-            height: 100vh;
+            height: 60vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -168,6 +168,20 @@
             margin-bottom: 10px;
             cursor: pointer;
         }
+        .footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #ff9900;
+            color: white;
+            text-align: center;
+        }
+        .footer a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #f3b200;
+        }
 
 
         @media screen and (max-width: 900px) {
@@ -299,8 +313,12 @@
     <div class="nav">
         <a href="index.html" class="nav-link">Home</a>
         <a href="blog.html" class="nav-link">Blog</a>
+        <a href="page.html" class="nav-link">Page</a>
+        <a href="services.html" class="nav-link">Services</a>
         <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="contact.html" class="nav-link">Contact</a>
         <a href="buy.html" class="nav-link">Buy Now</a>
+        <a href="search.html" class="nav-link">Search</a>
     </div>
     <div class="container">
         <img src="logo.png" alt="Logo" class="logo">
@@ -308,6 +326,7 @@
         <p class="subtitle">Knowledge is key!</p>
         <button class="button">Get Started</button>
     </div>
+    <center><p><h3></h3></p><center><hr><br />
    <div class="about">
     <h1 align="center">About EthioLearn</h1>
     <div class="about-text">
@@ -318,7 +337,7 @@
     </div>
 </div>
 <div class="products" border="1"> 
-<h1 align="center">Course Titles</h1> 
+<h1 align="center">Our Top Courses</h1> 
     <div class="products">
     <div class="product">
         <div class="product-image">
@@ -363,7 +382,9 @@
         </div>
     </div>
 </div>
-     <footer style="background-color: black;"> 
-    <p align="center"><font color="white">© 2024 EthioLearn. All rights reserved.</font></p>     
-    <p align="center"><font color="white">Contact us: <a href="mailto:info@ethiolearn.com">info@ethiolearn.com</a></font></p> 
-</footer>
+<div class="footer">
+    <p>© 2024 EthioLearn. All rights reserved.</p>     
+    <p>Contact us: <a href="mailto:info@ethiolearn.com">info@ethiolearn.com</a></p> 
+</div>
+</body>
+</html>
